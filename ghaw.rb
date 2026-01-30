@@ -5,21 +5,21 @@
 class Ghaw < Formula
   desc "Terminal TUI for monitoring GitHub Actions workflow runs"
   homepage "https://github.com/dzoba/github-actions-watcher"
-  version "1.0.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dzoba/github-actions-watcher/releases/download/v1.0.0/github-actions-watcher_darwin_amd64.tar.gz"
-      sha256 "8d630f8eb4e0e4222be5b5de081573a7ca74e0ba271f08ee7a47fbe7477d8e57"
+      url "https://github.com/dzoba/github-actions-watcher/releases/download/v2.0.0/github-actions-watcher_darwin_amd64.tar.gz"
+      sha256 "047c15e05af1b4ed041ac5fd6760c858a0245fdd13d52850a515786998db493a"
 
       def install
         bin.install "ghaw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dzoba/github-actions-watcher/releases/download/v1.0.0/github-actions-watcher_darwin_arm64.tar.gz"
-      sha256 "a652debbbe2f7dad2e3dbd53f03487742b33879f2ec6f915f93c623da54386f9"
+      url "https://github.com/dzoba/github-actions-watcher/releases/download/v2.0.0/github-actions-watcher_darwin_arm64.tar.gz"
+      sha256 "3ae983ed401b834c678025b491c48fbc0f289365bf01acef1fc83c4d8f194592"
 
       def install
         bin.install "ghaw"
@@ -29,15 +29,15 @@ class Ghaw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dzoba/github-actions-watcher/releases/download/v1.0.0/github-actions-watcher_linux_amd64.tar.gz"
-      sha256 "ab9135c8c4cc0573774461d4a04952c104b824412fc7d2253d4f9e653427cf9e"
+      url "https://github.com/dzoba/github-actions-watcher/releases/download/v2.0.0/github-actions-watcher_linux_amd64.tar.gz"
+      sha256 "e23173396fa966f31c455ce600554911aa2ed316ffcfda4ee20b40b378e6d900"
       def install
         bin.install "ghaw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dzoba/github-actions-watcher/releases/download/v1.0.0/github-actions-watcher_linux_arm64.tar.gz"
-      sha256 "966a118d22205d739d2cc3c11bd825f490bfd46c2f421a8b92986001a7e8e5c1"
+      url "https://github.com/dzoba/github-actions-watcher/releases/download/v2.0.0/github-actions-watcher_linux_arm64.tar.gz"
+      sha256 "2ef61135a29bd8e15aacf45f43b707f89823cfddbe49e991df5ae3b2f80a56ee"
       def install
         bin.install "ghaw"
       end
